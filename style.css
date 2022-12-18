@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.heading{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.box{
+    height: 400px;
+    width: 300px;
+    /* margin: auto; */
+    background-color: rgb(0 255 184 / 44%);
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4), 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: 2px solid black;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+
+}
+
+.inputField{
+    height: 40px;
+    width: 180px;
+    border-radius: 30px;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid blue;
+    margin: auto;
+    display: block;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.location{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.temp{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.tempmin_max{
+    font-size: 16px;
+    /* color: rgb(93, 87, 87); */
+    color: black;
+    margin-top: 5px;
+}
+
+.errorMsg{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(54, 52, 52);
+}
+
+
+footer{
+   position: fixed;
+   bottom: 0;
+   text-align: center;
+   color: white;
+   margin-bottom: 10px;
+}
+
+/* Responsive */
+@media only screen and (max-width : 412px) {
+    .heading{
+        font-size: 30px;
+    }
+    .box{
+        max-width: 300px;
+        max-height: 390px;
+    }
+    footer{
+        font-size: 15px;
+     }
+}
+@media only screen and (max-width : 280px) {
+    .heading{
+        font-size: 25px;
+    }
+    .box{
+        max-width: 250px;
+        max-height: 350px;
+    }
+    .info{
+        height: 200px;
+        width: 200px;
+        margin-top: 50px;
+    }
+    .location{
+        font-size: 35px;
+    }
+    .temp{
+        font-size: 23px;
+    }
+    .tempmin_max{
+        font-size: 13px;
+    }
+    footer{
+        font-size: 10px;
+     }
+}
+
